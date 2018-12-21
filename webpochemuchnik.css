@@ -1,0 +1,176 @@
+
+body{
+  background: #ffffff;
+}
+
+div {
+    display: block;
+}
+
+img {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  left: 200px;
+  bottom: 120px;
+}
+
+h2 {
+  color: 	#ffffff;
+  position: absolute;
+  text-align: center;
+  font-family: Helvetica, Arial;
+  top: 30px;
+  left: 550px;
+
+}
+
+.header {
+    background-color: rgba(0,0,0);
+    height: 8rem;
+    z-index: 1;
+
+}
+
+.button {
+  padding: 55px;
+  margin: 9px 5px;
+
+}
+
+.button5 {border-radius: 50%;}
+
+.menu{
+  display: block;
+  position: relative;
+  margin: 10px;
+  height: 1000px;
+  width: 120px;
+  overflow: hidden;
+}
+
+.menu ul{
+  display: block;
+  list-style:none;
+  text-align:center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li{
+  display: block;
+  background: #333;
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #444;
+  font-family: sans-serif;
+  width: 80px;
+  height: 80px;
+}
+
+.menu ul li.tab-fill{
+  display: none;
+}
+
+.menu ul li a{
+  display: block;
+  color: #AAA;
+  text-decoration: none;
+  padding-top: 15px;
+  transition: 0.25s;
+}
+
+.menu ul li.selected a{
+  color: #EEE;
+}
+
+.menu ul li.selected a:hover{
+  color: #EEE;
+  font-size: 1em;
+}
+
+.menu ul li a:hover{
+  color: #FFF;
+  font-size: 1.05em;
+}
+
+.menu ul li .icon{
+  display: block;
+  line-height: 1.5em;
+  font-size: 2.5em;
+  font-weight: lighter;
+  text-shadow: -1px -1px 0px #222;
+}
+
+.menu ul li:after{
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    top: 40px;
+    right: 35px;
+    position: absolute;
+    content: "";
+    z-index: 999;
+}
+
+li.selected:after {
+    border-left: 8px solid #333;
+}
+
+
+.menu input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+ input#toggle[type=checkbox]{
+     display:none;
+ }
+
+
+label {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    bottom: 0;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+label:hover {
+    background: #FFF;
+  opacity: 0.15;
+}
+
+.to-change {
+        transition: top 0.5s;
+        -webkit-transition: top 0.5s;
+    }
+
+input[type=checkbox]:checked ~ label {
+  bottom: auto;
+  top: 0;
+}
+
+input[type=checkbox]:checked ~ .to-change {
+  position: absolute;
+  left: auto;
+  top: -310px;
+}
+
+input[type=checkbox]:checked ~ .to-change li.tab-fill {
+  display: block;
+}
+
+input[type=checkbox]:checked ~ .to-change-arrows {
+    bottom: auto;
+    top: 0;
+    border: none;
+    border-bottom: 1px solid #222;
+}
+
+input[type=checkbox]:checked ~ .to-change-arrows li.more{
+    display:none;
+}
