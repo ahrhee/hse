@@ -1,18 +1,5 @@
-
-body{
-  background: #ffffff;
-}
-
 div {
     display: block;
-}
-
-img {
-  height: 100px;
-  width: 500px;
-  position: absolute;
-  left: 200px;
-  bottom: 120px;
 }
 
 h2 {
@@ -24,6 +11,15 @@ h2 {
   left: 550px;
 
 }
+
+.image1 {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  left: 200px;
+  bottom: 120px;
+}
+
 
 .header {
     background-color: rgba(0,0,0);
@@ -174,3 +170,12 @@ input[type=checkbox]:checked ~ .to-change-arrows {
 input[type=checkbox]:checked ~ .to-change-arrows li.more{
     display:none;
 }
+
+.image2 {
+  height: 1000px;
+  weight: 2000px;
+  bottom: 300px;
+  /*background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}*/
